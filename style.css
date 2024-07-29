@@ -10,8 +10,9 @@ body {
 
 .content {
     display: flex;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start; /* Align items to the top of the container */
+    padding: 40px 20px; /* Add more padding to the top */
+    height: calc(100vh - 50px); /* Set a minimum height for the content area */
 }
 
 .image-container {
@@ -27,8 +28,8 @@ body {
 
 .text-container {
     flex: 1;
-    padding-left: 20px;
-    margin-left: auto; /* Center the text container by pushing it away from the image */
+    padding-left: 50px; /* Increase padding to shift the text right */
+    margin-top: auto; /* Adjust the margin to center the text vertically */
     max-width: 50%; /* Limit the maximum width of the text content */
     text-align: left; /* Align the text to the left */
 }
