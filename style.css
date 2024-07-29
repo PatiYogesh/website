@@ -6,14 +6,17 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; /* Ensures full height for centering */
 }
 
 .content {
     display: flex;
     align-items: center;
-    padding: 20px;
-    height: calc(100vh - 50px); /* Ensure content takes full height */
     justify-content: center; /* Center content horizontally */
+    margin-top: -50px; /* Adjust to move content upwards */
 }
 
 .image-container {
@@ -32,7 +35,6 @@ body {
     max-width: 50%; /* Limit the maximum width of the text content */
     text-align: left; /* Align the text to the left */
     align-self: flex-start; /* Align the text container to the start */
-    margin-top: auto; /* Center the text vertically */
 }
 
 /* Style for the animated text */
