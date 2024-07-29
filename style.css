@@ -15,18 +15,22 @@ body {
 }
 
 .image-container {
-    flex: 0 0 15%;
+    flex: 0 0 auto;
+    width: 150px; /* Fixed width for the image */
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%;  /* Ensures the image fits the container */
+    height: auto;  /* Maintains the aspect ratio */
+    border-radius: 8px;  /* Optional: Rounded corners */
 }
 
 .text-container {
     flex: 1;
     padding-left: 20px;
+    margin-left: auto; /* Center the text container by pushing it away from the image */
+    max-width: 50%; /* Limit the maximum width of the text content */
+    text-align: left; /* Align the text to the left */
 }
 
 /* Style for the animated text */
