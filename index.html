@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh Pati</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Introducing Yogesh</a>
+        <a href="experience.html">Professional Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+    <div class="content">
+        <h1>Good Evening!</h1>
+        <h2>I am Yogesh</h2>
+        <div class="typewriter-text" id="animated-text"></div>
+    </div>
+    <script>
+        const texts = ["Business Developer", "Business Consultant", "Product Specialist", "Product Manager", "Business Analyst"];
+        let count = 0;
+        let index = 0;
+        let currentText = "";
+        let letter = "";
+
+        (function type() {
+            if (count === texts.length) {
+                count = 0;
+            }
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.getElementById('animated-text').textContent = letter;
+            if (letter.length === currentText.length) {
+                count++;
+                index = 0;
+                setTimeout(type, 2000);
+            } else {
+                setTimeout(type, 100);
+            }
+        }());
+    </script>
+</body>
+</html>
