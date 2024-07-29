@@ -15,18 +15,32 @@
         <a href="resume.html">Resume</a>
     </nav>
     <div class="content">
-        <h1>Good Evening!</h1>
+        <h1 id="greeting"></h1>
         <h2>I am Yogesh</h2>
         <div class="typewriter-text" id="animated-text"></div>
     </div>
     <script>
+        function greetVisitor() {
+            const now = new Date();
+            const hours = now.getHours();
+            let greeting;
+            if (hours < 12) {
+                greeting = "Good Morning!";
+            } else if (hours < 18) {
+                greeting = "Good Afternoon!";
+            } else {
+                greeting = "Good Evening!";
+            }
+            document.getElementById("greeting").innerText = `Hi, ${greeting}`;
+        }
+
         const texts = ["Business Developer", "Business Consultant", "Product Specialist", "Product Manager", "Business Analyst"];
         let count = 0;
         let index = 0;
         let currentText = "";
         let letter = "";
 
-        (function type() {
+        function typeWriter() {
             if (count === texts.length) {
                 count = 0;
             }
@@ -37,11 +51,14 @@
             if (letter.length === currentText.length) {
                 count++;
                 index = 0;
-                setTimeout(type, 2000);
+                setTimeout(typeWriter, 2000);
             } else {
-                setTimeout(type, 100);
+                setTimeout(typeWriter, 100);
             }
-        }());
+        }
+
+        greetVisitor();
+        typeWriter();
     </script>
 </body>
 </html>
