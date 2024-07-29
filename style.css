@@ -10,14 +10,16 @@ body {
 
 .content {
     display: flex;
-    align-items: flex-start; /* Align items to the top of the container */
-    padding: 40px 20px; /* Add more padding to the top */
-    height: calc(100vh - 50px); /* Set a minimum height for the content area */
+    align-items: center;
+    padding: 20px;
+    height: calc(100vh - 50px); /* Ensure content takes full height */
+    justify-content: center; /* Center content horizontally */
 }
 
 .image-container {
     flex: 0 0 auto;
     width: 150px; /* Fixed width for the image */
+    margin-right: 20px; /* Add some space between image and text */
 }
 
 .image-container img {
@@ -27,11 +29,10 @@ body {
 }
 
 .text-container {
-    flex: 1;
-    padding-left: 50px; /* Increase padding to shift the text right */
-    margin-top: auto; /* Adjust the margin to center the text vertically */
     max-width: 50%; /* Limit the maximum width of the text content */
     text-align: left; /* Align the text to the left */
+    align-self: flex-start; /* Align the text container to the start */
+    margin-top: auto; /* Center the text vertically */
 }
 
 /* Style for the animated text */
@@ -62,12 +63,12 @@ h1, h2 {
 
 h1 {
     font-size: 36px;
-    margin-top: 50px;
+    margin-bottom: 10px; /* Reduce space below h1 */
 }
 
 h2 {
     font-size: 28px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Styling the navigation menu */
