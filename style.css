@@ -1,9 +1,9 @@
-/* Adding a tech-themed background to the body */
+/* Adding a cosmos-themed background to the body */
 body {
-    background: url('https://source.unsplash.com/featured/?technology') no-repeat center center fixed;
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364, #4A569D, #6B69D6);
     background-size: cover;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,7 @@ body {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 0.15em solid orange;
+    border-right: 0.15em solid #ffffff;
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
@@ -31,20 +31,22 @@ body {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: orange; }
+    50% { border-color: #ffffff; }
 }
 
 /* Adjusting the section titles */
+h1, h2 {
+    color: #ffffff;
+}
+
 h1 {
     font-size: 36px;
     margin-top: 50px;
-    color: #fff;
 }
 
 h2 {
     font-size: 28px;
     margin-top: 20px;
-    color: #fff;
 }
 
 /* Styling the navigation menu */
@@ -55,7 +57,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
@@ -63,4 +65,16 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* Style for footer contacts */
+footer .contacts a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+footer p {
+    color: #ffffff;
 }
