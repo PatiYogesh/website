@@ -6,35 +6,35 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh; /* Ensures full height for centering */
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .content {
     display: flex;
     align-items: center;
     justify-content: center; /* Center content horizontally */
-    margin-top: -50px; /* Adjust to move content upwards */
-}
-
-.image-container {
-    flex: 0 0 auto;
-    width: 150px; /* Fixed width for the image */
-    margin-right: 20px; /* Add some space between image and text */
-}
-
-.image-container img {
-    width: 100%;  /* Ensures the image fits the container */
-    height: auto;  /* Maintains the aspect ratio */
-    border-radius: 8px;  /* Optional: Rounded corners */
-}
-
-.text-container {
-    max-width: 50%; /* Limit the maximum width of the text content */
-    text-align: left; /* Align the text to the left */
-    align-self: flex-start; /* Align the text container to the start */
+    margin-top: 60px; /* Space for the fixed nav */
+    padding: 20px;
 }
 
 /* Style for the animated text */
@@ -71,24 +71,6 @@ h1 {
 h2 {
     font-size: 28px;
     margin-bottom: 20px;
-}
-
-/* Styling the navigation menu */
-nav {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 /* Footer styles */
