@@ -9,8 +9,21 @@ body {
 }
 
 .content {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    text-align: left;
+}
+
+.text-container {
+    max-width: 50%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* Style for the animated text */
@@ -65,16 +78,4 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-}
-
-/* Style for footer contacts */
-footer .contacts a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 18px;
-}
-
-footer p {
-    color: #ffffff;
 }
