@@ -5,125 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yogesh Pati</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background: url('https://source.unsplash.com/featured/?technology') no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        .intro {
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .image-container {
-            flex: 0 0 auto;
-            margin-right: 20px;
-        }
-
-        .image-container img {
-            width: 200px;
-            height: auto;
-            border-radius: 5px;
-            border: 2px solid #fff;
-        }
-
-        .text-container {
-            flex: 1;
-            text-align: left;
-            color: #fff;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-top: 20px;
-            color: #fff;
-        }
-
-        h2 {
-            font-size: 28px;
-            margin-top: 10px;
-            color: #fff;
-        }
-
-        .typewriter-text {
-            font-size: 24px;
-            font-weight: bold;
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 0.15em solid orange;
-            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: orange; }
-        }
-
-        nav {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
-
-        .footer-left, .footer-center, .footer-right {
-            display: flex;
-            align-items: center;
-        }
-
-        .footer-left p, .footer-center p {
-            margin: 0;
-        }
-
-        .footer-center img {
-            margin: 0 5px;
-        }
-
-        .footer-right a img {
-            margin: 0 10px;
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -135,13 +16,13 @@
     </nav>
     <div class="content">
         <div class="intro">
-            <div class="image-container">
-                <img src="IMG_1964.jpg" alt="Yogesh Pati">
+            <div class="image-container" style="flex: 0 0 auto; margin-right: 20px;">
+                <img src="IMG_1964.jpg" alt="Yogesh Pati" style="width: 150px; height: auto; border-radius: 5px;">
             </div>
-            <div class="text-container">
-                <h1 id="greeting">Hi, Good Afternoon!</h1>
+            <div class="text-container" style="flex: 1;">
+                <h1 id="greeting"></h1>
                 <h2>I am Yogesh Kumar Pati</h2>
-                <div class="typewriter-text" id="animated-text">Product Manager</div>
+                <div class="typewriter-text" id="animated-text"></div>
             </div>
         </div>
         <div class="description" style="margin-top: 20px;">
