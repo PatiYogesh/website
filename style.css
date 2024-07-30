@@ -7,49 +7,71 @@ body {
     padding: 0;
 }
 
+/* Container for Certificates */
 .certificates-section {
-    margin-top: 40px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .certificates-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between grid items */
+    max-width: 1200px; /* Maximum width for the grid */
+    width: 100%;
+    padding: 0 20px; /* Padding for the grid */
 }
 
 .certificate-item {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    overflow: hidden; /* Ensure content doesn't overflow the box */
     text-align: center;
+    padding: 15px;
 }
 
 .certificate-item img {
     width: 100%;
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
+.certificate-item p {
+    color: #ffffff; /* White text color */
+    font-size: 14px; /* Smaller font size for description */
+    margin: 5px 0;
+}
+
+/* Additional styles for buttons and text */
 .certificate-actions {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    margin-top: 10px;
 }
 
 .like-btn, .share-btn {
-    background: none;
+    background-color: #f39c12;
     border: none;
-    font-size: 24px;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
+.like-btn:hover, .share-btn:hover {
+    background-color: #ffffff;
+    color: #f39c12;
+    border: 1px solid #f39c12;
+}
+
 .like-count {
-    font-size: 18px;
+    margin-left: 10px;
+    color: #ffffff;
 }
 
 /* Header and Navigation */
