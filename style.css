@@ -43,24 +43,25 @@ nav a:hover {
 
 .intro {
     display: flex;
-    align-items: center; /* Center align items vertically */
-    justify-content: center; /* Center the entire .intro container */
+    align-items: center;
+    justify-content: center;
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
-    padding-left: 50px; /* Optional: Add padding to push the intro section more to the right */
+    padding-left: 50px;
+    margin-bottom: 150px; /* Add bottom margin to separate from description */
 }
 
 .image-container {
-    margin-right: 20px; /* Space between the image and the text */
-    width: 200px; /* Set width for rectangle */
-    height: 250px; /* Set height for rectangle */
+    margin-right: 20px;
+    width: 200px;
+    height: 250px;
 }
 
 .image-container img {
-    width: 100%; /* Ensures the image takes up the full width of the container */
-    height: 100%; /* Ensures the image takes up the full height of the container */
-    border-radius: 5px; /* Optional: Slightly rounded corners */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .text-container {
@@ -69,19 +70,18 @@ nav a:hover {
 }
 
 .description {
-    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the description content */
 }
 
 .dialogue-box {
     margin-top: 150px; /* Space between image and dialogue box */
-    padding: 15px 20px; /* Padding inside the dialogue box */
-    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 600px; /* Max width of the dialogue box */
-    color: #333; /* Text color */
-    position: relative; /* Position relative for additional styling if needed */
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
 /* Style for the animated text */
