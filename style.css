@@ -44,14 +44,15 @@ nav a:hover {
 .intro {
     display: flex;
     align-items: center; /* Center align items vertically */
-    justify-content: flex-start; /* Align items to the start horizontally */
+    justify-content: center; /* Center the entire .intro container */
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
+    padding-left: 50px; /* Optional: Add padding to push the intro section more to the right */
 }
 
 .image-container {
-    margin-right: 20px; /* Add some space between the image and the text */
+    margin-right: 20px; /* Space between the image and the text */
     width: 200px; /* Set width for rectangle */
     height: 250px; /* Set height for rectangle */
 }
