@@ -122,19 +122,17 @@ h1, h2 {
     50% { border-color: orange; }
 }
 
-/* Updated Footer Style */
+/* Footer Styling */
 footer {
-    background-color: rgba(0, 0, 0, 0.95); /* Darker background with less transparency */
-    padding: 10px 0; /* Reduced padding for smaller height */
+    background-color: rgba(0, 0, 0, 0.95); /* Darker background with minimal transparency */
+    padding: 10px 20px; /* Reduced padding for a smaller footer height */
     color: #ffffff; /* White text color */
     text-align: center;
-    border-top: 2px solid #444444; /* Top border for separation */
+    border-top: 2px solid #444444; /* Top border */
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center; /* Center all content horizontally */
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px; /* Space above footer */
-    position: relative; /* Ensures footer is placed at the bottom of the content */
+    margin-top: 30px;
     width: 100%;
 }
 
@@ -142,17 +140,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Set a maximum width for the content */
+    max-width: 1200px; /* Max width for footer content */
     width: 100%;
-    padding: 0 10px; /* Side padding for content */
+    padding: 0 20px; /* Side padding for uniform content placement */
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
     flex: 1;
-    text-align: center; /* Centered text in each section */
-    margin: 5px 0; /* Margin for responsive spacing */
+    margin: 5px 0; /* Margin for spacing between sections */
 }
 
 .footer-left {
@@ -167,12 +164,13 @@ footer {
     text-align: right;
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* Align content to the end of the container */
 }
 
 footer a {
     color: #f39c12; /* Accent color for links */
     text-decoration: none;
-    margin: 0 10px; /* Space between links */
+    margin: 0 5px; /* Reduced margin for compactness */
 }
 
 footer a:hover {
@@ -187,18 +185,14 @@ footer img {
 
 .footer-right .contact-info {
     font-size: 14px;
-    margin-left: 10px;
-    white-space: nowrap; /* Prevent contact details from wrapping */
-    color: #ffffff; /* Ensure text is visible on the dark background */
+    margin-left: 10px; /* Space between icons and contact info */
+    white-space: nowrap; /* Prevent wrapping */
+    color: #ffffff; /* Ensures the contact info is visible */
 }
 
 .footer-right .social-icons {
     display: flex;
     align-items: center;
-}
-
-.footer-right .social-icons img {
-    margin-right: 10px; /* Space between icons and contact info */
 }
 
 /* General */
