@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Projects &amp; Accolades - Yogesh Pati</title>
+<title>Projects & Accolades - Yogesh Pati</title>
 <link href="style.css" rel="stylesheet"/>
 
 <style>
@@ -17,38 +16,57 @@ body {
     background: linear-gradient(135deg, #0F2027, #203A43, #2C5364, #4A569D, #6B69D6);
     background-size: cover;
 }
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-  <div id="caption"></div>
-</div>
 
-    <script>
-  // Get the modal
-  var modal = document.getElementById('lightbox');
+/* Lightbox Modal Styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
 
-  // Get the image and insert it inside the modal
-  var modalImg = document.getElementById("lightbox-img");
-  var captionText = document.getElementById("caption");
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
 
-  document.querySelectorAll('.certificate-item img').forEach(item => {
-    item.addEventListener('click', function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    });
-  });
+.close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-</script>
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
 
-    
 /* Header and Navigation */
 nav {
     background-color: rgba(0, 0, 0, 0.8);
@@ -150,13 +168,13 @@ button:hover {
 <nav>
 <a href="index.html">Home</a>
 <a href="professional-experience.html">Professional Journey</a>
-<a href="projects.html">Projects &amp; Accolades</a>
+<a href="projects.html">Projects & Accolades</a>
 <a href="resume.html">Resume</a>
 </nav>
 <div class="content">
 <div class="intro">
 <div class="text-container">
-<h1>Projects &amp; Accolades</h1>
+<h1>Projects & Accolades</h1>
 <div class="certificates-section">
 <h2>Certificates</h2>
 <div class="certificates-grid">
@@ -165,47 +183,6 @@ button:hover {
 <div class="certificate-actions">
 <button class="like-btn">👍</button>
 <span class="like-count">10</span>
-<button class="share-btn">Share</button>
-</div>
-<p>Certificate of Excellence for Strategic Research &amp; Analysis Support</p>
-<p>Complete Agile Scrum Master Certification Training</p>
-</div>
-<div class="certificate-item">
-<img alt="Executive PG Programme in Data Science" src="EPGP - IIIT B .jpg"/>
-<div class="certificate-actions">
-<button class="like-btn">👍</button>
-<span class="like-count">0</span>
-<button class="share-btn">Share</button>
-</div>
-<p>Executive PG Programme in Data Science</p>
-</div>
-<div class="certificate-item">
-<img alt="Advanced Google Analytics" src="Google Analytics advanced.jpg"/>
-<div class="certificate-actions">
-<button class="like-btn">👍</button>
-<span class="like-count">0</span>
-<button class="share-btn">Share</button>
-</div>
-<p>Advanced Google Analytics</p>
-</div>
-<div class="certificate-item">
-<img alt="Summary of Internship with Ecolibrium Energy" src="LOR_Ecolib.jpg"/>
-<div class="certificate-actions">
-<button class="like-btn">👍</button>
-<span class="like-count">0</span>
-<button class="share-btn">Share</button>
-</div>
-<p>Summary of Internship with Ecolibrium Energy</p>
-</div>
-<div class="certificate-item">
-<img alt="Master Product Management by actually building a Product" src="Product Mangement_FutureVersity School.jpg"/>
-<div class="certificate-actions">
-<button class="like-btn">👍</button>
-<span class="like-count">0</span>
-<button class="share-btn">Share</button>
-</div>
-<p>Master Product Management by actually building a Product</p>
-</div>
 </div>
 </div>
 <div class="github-projects">
@@ -215,46 +192,77 @@ button:hover {
 </div>
 </div>
 </div>
-<footer>
-<div class="footer-content">
-<div class="footer-left">
-<p>Developed by Yogesh Kumar Pati</p>
+<p>Certificate of Excellence for Strategic Research & Analysis Support</p>
+<p>Complete Agile Scrum Master Certification Training</p>
 </div>
-<div class="footer-center">
-<p>© 2024 <img alt="Logo" src="png-transparent-computer-icons-path-miscellaneous-text-heart-thumbnail.png" style="width: 20px; height: auto;"/> All Rights Reserved</p>
+<div class="certificate-item">
+<img alt="Executive PG Programme in Data Science" src="EPGP - IIIT B .jpg"/>
+<div class="certificate-actions">
+<button class="like-btn">👍</button>
+<span class="like-count">0</span>
 </div>
-<div class="footer-right">
-<a href="mailto:yogeshpatijobs@gmail.com">
-<img alt="Email" src="images.png" style="width: 30px; height: auto;"/>
-</a>
-<a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
-<img alt="LinkedIn" src="circle-linkedin-512.webp" style="width: 30px; height: auto;"/>
-</a>
-<a href="https://github.com/PatiYogesh" target="_blank">
-<img alt="GitHub" src="iconmonstr-github-1.png" style="width: 30px; height: auto;"/>
-</a>
-<p>+918501914606</p>
+<p>Executive PG Programme in Data Science</p>
 </div>
+<div class="certificate-item">
+<img alt="Advanced Google Analytics" src="Google Analytics advanced.jpg"/>
+<div class="certificate-actions">
+<button class="like-btn">👍</button>
+<span class="like-count">0</span>
 </div>
-</footer>
-<script>
-        const likeButtons = document.querySelectorAll('.like-btn');
-        likeButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const countSpan = button.nextElementSibling;
-                let count = parseInt(countSpan.textContent);
-                count++;
-                countSpan.textContent = count;
-            });
-        });
+<p>Advanced Google Analytics</p>
+</div>
+<div class="certificate-item">
+<img alt="Master Product Management by actually building a Product" src="Product Mangement_FutureVersity School.jpg"/>
+<div class="certificate-actions">
+<button class="like-btn">👍</button>
+<span class="like-count">0</span>
+</div>
+<p>Master Product Management by actually building a Product</p>
+</div>
 
-        const shareButtons = document.querySelectorAll('.share-btn');
-        shareButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Implement share functionality here
-                alert('Share functionality is not implemented.');
-            });
-        });
-    </script>
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="caption"></div>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('lightbox');
+
+  // Get the image and insert it inside the modal
+  var modalImg = document.getElementById("lightbox-img");
+  var captionText = document.getElementById("caption");
+
+  document.querySelectorAll('.certificate-item img').forEach(item => {
+    item.addEventListener('click', function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    });
+  });
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
+
+<script>
+  const likeButtons = document.querySelectorAll('.like-btn');
+  likeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          const countSpan = button.nextElementSibling;
+          let count = parseInt(countSpan.textContent);
+          count++;
+          countSpan.textContent = count;
+      });
+  });
+</script>
+
 </body>
 </html>
