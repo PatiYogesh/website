@@ -226,3 +226,34 @@ button:hover {
     color: black;
     border: 2px solid #f39c12;
 }
+
+/* General Style for Medium-Sized Dialogue Boxes */
+.experience-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px; /* Spacing between boxes */
+    color: #ffffff; /* Ensure text is readable */
+}
+
+/* Smaller Boxes for Professional Skills */
+.skills, .tools {
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+    justify-content: center;
+    gap: 10px; /* Spacing between the skill and tool boxes */
+    margin-top: 20px;
+}
+
+.skill-box, .tool-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 10px;
+    color: #ffffff; /* White text for readability */
+    text-align: center;
+    min-width: 100px; /* Minimum width for small boxes */
+    max-width: 150px; /* Maximum width for small boxes */
+    flex: 1;
+}
