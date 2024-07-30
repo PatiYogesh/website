@@ -63,6 +63,41 @@ nav a:hover {
     padding: 0;
 }
 
+.skills-tools {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.skills-tools h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.skills, .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-box, .tool-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 8px;
+    padding: 10px 15px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-box:hover, .tool-box:hover {
+    transform: scale(1.05);
+}
+
 footer {
     display: flex;
     justify-content: space-between;
