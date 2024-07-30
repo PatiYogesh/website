@@ -15,30 +15,29 @@
         <a href="resume.html">Resume</a>
     </nav>
     <div class="content">
-        <div class="intro">
-            <div class="image-container">
-                <img src="IMG_1964.jpg" alt="Yogesh Pati">
+        <div class="intro" style="display: flex; align-items: center;">
+            <div class="image-container" style="flex: 0 0 auto; margin-right: 20px;">
+                <img src="IMG_1964.jpg" alt="Yogesh Pati" style="width: 150px; height: auto; border-radius: 5px;">
             </div>
-            <div class="text-container">
-                <h1 id="greeting"></h1>
-                <h2>I am Yogesh Kumar Pati</h2>
-                <div class="typewriter-text" id="animated-text"></div>
-                <p class="description">
-                    AI and Tech Enthusiast | Product Manager | Business Consultant | Education Advisor
-                </p>
-                <p class="description">
-                    I blend technology and management insights. I’m an alumnus of IIIT-Bangalore with an Executive PG Program degree in Data Science and hold a Post Graduate Diploma in Management from Kirloskar Institute of Management, Pune.
-                </p>
-                <p class="description">
-                    I’m a quick learner who loves challenges and new concepts. Discovering and solving problems is my core strength. I thrive on completing tasks on time and prioritizing effectively, which gives me immense satisfaction.
-                </p>
-                <p class="description">
-                    Besides work, I’m passionate about the stock market and astrology. Though not a professional astrologer, I use my analytical skills and intuition to explore universal energies. I’m also a sports enthusiast who loves gymming, swimming, cricket, football, table tennis, and strategic games like chess. Recently, I've been diving into the world of Virtual Reality games.
-                </p>
-                <p class="description">
-                    Looking forward, I'm eager to deepen my expertise in Artificial Intelligence, Machine Learning, and Product Management, pushing boundaries and driving innovation.
-                </p>
+            <div class="text-container" style="flex: 1;">
+                <h1 id="greeting" style="text-align: left;"></h1>
+                <h2 style="text-align: left;">I am Yogesh Kumar Pati</h2>
+                <div class="typewriter-text" id="animated-text" style="text-align: left;"></div>
             </div>
+        </div>
+        <div class="description" style="margin-top: 20px;">
+            <p class="description">
+                I blend technology and management insights. I’m an alumnus of IIIT-Bangalore with an Executive PG Program degree in Data Science and hold a Post Graduate Diploma in Management from Kirloskar Institute of Management, Pune.
+            </p>
+            <p class="description">
+                I’m a quick learner who loves challenges and new concepts. Discovering and solving problems is my core strength. I thrive on completing tasks on time and prioritizing effectively, which gives me immense satisfaction.
+            </p>
+            <p class="description">
+                Besides work, I’m passionate about the stock market and astrology. Though not a professional astrologer, I use my analytical skills and intuition to explore universal energies. I’m also a sports enthusiast who loves gymming, swimming, cricket, football, table tennis, and strategic games like chess. Recently, I've been diving into the world of Virtual Reality games.
+            </p>
+            <p class="description">
+                Looking forward, I'm eager to deepen my expertise in Artificial Intelligence, Machine Learning, and Product Management, pushing boundaries and driving innovation.
+            </p>
         </div>
     </div>
     <footer>
@@ -78,7 +77,7 @@
             document.getElementById("greeting").innerText = `Hi, ${greeting}`;
         }
 
-        const texts = ["AI and Tech Enthusiast", "Product Manager", "Business Consultant", "Education Advisor"];
+        const texts = ["Product Manager", "Business Consultant", "Education Consultant", "AI and Tech Enthusiast"];
         let count = 0;
         let index = 0;
         let currentText = "";
