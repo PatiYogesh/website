@@ -17,13 +17,20 @@
         <div class="intro">
             <div class="text-container">
                 <h1>Projects & Accolades</h1>
-                <ul>
-                    <li><strong>Building a CRM Product</strong>: Developed and launched a CRM product for Learn Smart Services, enhancing client tracking and engagement.</li>
-                    <li><strong>Stock Analysis & Portfolio Management</strong>: Conducted risk-return assessments and applied predictive models for portfolio returns.</li>
-                    <li><strong>Customer Segmentation for Retailkart.com</strong>: Built models for customer segmentation and churn prediction.</li>
-                    <li><strong>Data Strategies for Airbnb, NYC</strong>: Provided recommendations on host acquisition and property optimization.</li>
-                    <li><strong>Logistic Regression for Lead Scoring</strong>: Improved lead conversion rates for an education company.</li>
-                </ul>
+                <div class="certificates-section">
+                    <h2>Certificates</h2>
+                    <div class="certificates-grid">
+                        <div class="certificate-item">
+                            <img src="certificate1-thumbnail.jpg" alt="Certificate of Excellence">
+                            <div class="certificate-actions">
+                                <button class="like-btn">&#x1F44D;</button>
+                                <span class="like-count">10</span>
+                                <button class="share-btn">Share</button>
+                            </div>
+                            <p>Certificate of Excellence for Strategic Research & Analysis Support on the Live Project “Competition Analysis Of Consumer Experience For Online Classifieds Business In India Jan”</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -49,5 +56,24 @@
             </div>
         </div>
     </footer>
+    <script>
+        const likeButtons = document.querySelectorAll('.like-btn');
+        likeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const countSpan = button.nextElementSibling;
+                let count = parseInt(countSpan.textContent);
+                count++;
+                countSpan.textContent = count;
+            });
+        });
+
+        const shareButtons = document.querySelectorAll('.share-btn');
+        shareButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Implement share functionality here
+                alert('Share functionality is not implemented.');
+            });
+        });
+    </script>
 </body>
 </html>
