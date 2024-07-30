@@ -68,6 +68,22 @@ nav a:hover {
     text-align: left;
 }
 
+.description {
+    margin-top: 20px;
+}
+
+.dialogue-box {
+    margin-top: 150px; /* Space between image and dialogue box */
+    padding: 15px 20px; /* Padding inside the dialogue box */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Max width of the dialogue box */
+    color: #333; /* Text color */
+    position: relative; /* Position relative for additional styling if needed */
+}
+
 /* Style for the animated text */
 .typewriter-text {
     font-size: 24px;
