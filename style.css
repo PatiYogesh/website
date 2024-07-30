@@ -3,8 +3,8 @@ body {
     background-size: cover;
     font-family: Arial, sans-serif;
     color: #ffffff;
-    margin: 20;
-    padding: 20;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
