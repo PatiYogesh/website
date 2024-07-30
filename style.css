@@ -124,8 +124,8 @@ h1, h2 {
 
 /* Updated Footer Style */
 footer {
-    background-color: #000000; /* Black background */
-    padding: 20px 0; /* Padding for top and bottom */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with some opacity */
+    padding: 20px; /* Padding for top and bottom */
     color: #ffffff; /* White text color */
     text-align: center;
     border-top: 2px solid #444444; /* Top border for separation */
@@ -134,6 +134,8 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 30px; /* Space above footer */
+    position: relative; /* Changed from fixed to relative */
+    width: 100%;
 }
 
 .footer-content {
@@ -181,21 +183,12 @@ footer img {
     margin: 0 5px; /* Space around icons */
 }
 
-.footer-right .social-icons {
-    display: flex;
-    align-items: center;
-}
-
-.footer-right .social-icons img {
-    margin-right: 10px;
-}
-
-/* Contact Info */
 .footer-right .contact-info {
     font-size: 14px;
     margin-left: 10px;
     white-space: nowrap; /* Prevent contact details from wrapping */
 }
+
 
 
 /* General */
