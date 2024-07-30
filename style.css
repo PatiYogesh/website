@@ -36,6 +36,49 @@ nav a:hover {
     padding: 20px;
 }
 
+.intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.image-container {
+    margin-right: 20px;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-container {
+    max-width: 500px;
+    text-align: left;
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dialogue-box {
+    margin-top: 150px;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
 .experience-box {
     background-color: rgba(255, 255, 255, 0.9);
     color: #333;
@@ -117,34 +160,17 @@ footer {
     width: 100%;
 }
 
-.footer-left {
-    flex: 1;
-    text-align: left;
-}
-
-.footer-center {
-    flex: 1;
-    text-align: center;
-}
-
-.footer-right {
-    flex: 1;
-    text-align: right;
+.footer-left, .footer-center, .footer-right {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
-.footer-right a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.footer-right img {
-    vertical-align: middle;
-}
-
-footer p, footer a {
+.footer-left p, .footer-center p, .footer-right p {
     margin: 0;
     padding: 0;
+}
+
+.footer-right a img {
+    margin-left: 10px;
+    vertical-align: middle;
 }
