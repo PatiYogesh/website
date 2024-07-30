@@ -51,11 +51,11 @@ nav a:hover {
 }
 
 .image-container {
-    position: relative;
+    position: absolute;
+    top: 60px; /* Adjust this value as needed */
+    left: 25px;
     width: 200px; /* Set width for rectangle */
     height: 250px; /* Set height for rectangle */
-    overflow: hidden;
-    margin-right: 20px;
 }
 
 .image-container img {
