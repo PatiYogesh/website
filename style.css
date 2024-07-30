@@ -122,23 +122,22 @@ h1, h2 {
     50% { border-color: orange; }
 }
 
-/* Footer */
+/* Updated Footer Style */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    background-color: #333333; /* Darker background */
+    padding: 30px 20px; /* Increased padding for more space */
     text-align: center;
-    color: #ffffff;
-    margin-top: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    color: #cccccc; /* Light grey text color */
+    position: relative; /* Changed from fixed to relative */
+    margin-top: 30px; /* More space above the footer */
+    border-top: 2px solid #444444; /* Border on top */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
 }
 
 footer a {
-    color: #f39c12;
+    color: #f39c12; /* Accent color for links */
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px; /* More space between links */
 }
 
 footer a:hover {
@@ -146,9 +145,34 @@ footer a:hover {
 }
 
 footer img {
-    width: 30px;
+    width: 35px; /* Slightly larger icons */
     height: auto;
-    margin: 0 5px;
+    margin: 0 10px; /* More space around icons */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between content sections */
+    flex-wrap: wrap; /* Wrap content on small screens */
+}
+
+.footer-left, .footer-center, .footer-right {
+    margin: 10px 0; /* Margin between sections on small screens */
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left; /* Left-aligned text */
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center; /* Center-aligned text */
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right; /* Right-aligned text */
 }
 
 /* General */
