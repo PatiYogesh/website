@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Resume - Yogesh Pati</title>
+    <title>Yogesh Pati - Resume</title>
     <link href="style.css" rel="stylesheet">
 
     <style>
@@ -12,13 +12,7 @@
             color: #333;
             margin: 0;
             padding: 0;
-            background: #f0f0f0;
-        }
-        .header, .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
+            background: #f8f9fa;
         }
         .content {
             max-width: 800px;
@@ -28,58 +22,75 @@
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .section {
+        .download-btn-container {
+            text-align: right;
             margin-bottom: 20px;
         }
-        .section h2 {
+        .download-btn {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .download-btn:hover {
+            background-color: #d98507;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
             color: #333;
             border-bottom: 2px solid #f39c12;
             padding-bottom: 5px;
-        }
-        .contact-info a {
-            color: #f39c12;
-        }
-        .download-btn {
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            background-color: #f39c12;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
             margin-top: 20px;
+        }
+        p, ul {
+            margin: 10px 0;
+        }
+        ul {
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Yogesh Kumar Pati</h1>
-        <p>Product Manager | AI & ML Enthusiast</p>
-    </div>
-
     <div class="content">
-        <div class="section">
-            <h2>About Me</h2>
-            <p>A brief summary about your professional background, highlighting key experiences and achievements.</p>
+        <div class="download-btn-container">
+            <a href="Yogesh_Pati_CV.pdf" class="download-btn" download="Yogesh_Pati_CV.pdf">Download My Resume</a>
         </div>
-        <div class="section">
-            <h2>Professional Experience</h2>
-            <p>Details about your work experiences with timelines, job titles, and descriptions.</p>
-        </div>
-        <div class="section">
-            <h2>Education</h2>
-            <p>List your educational qualifications, institutions, and dates.</p>
-        </div>
-        <div class="section">
-            <h2>Skills & Projects</h2>
-            <p>Mention key skills and highlight significant projects with links.</p>
-        </div>
-        <a href="Yogesh_Pati_CV.pdf" class="download-btn" download="Yogesh_Pati_CV.pdf">Download My Resume</a>
-    </div>
 
-    <div class="footer">
-        <p>Connect with me on <a href="https://www.linkedin.com/in/yogesh-kumar-pati-seniormanagement/" target="_blank">LinkedIn</a> | <a href="https://github.com/PatiYogesh" target="_blank">GitHub</a></p>
+        <h1>Yogesh Kumar Pati</h1>
+
+        <h2>About Me</h2>
+        <p>I am a Product Manager with a strong background in AI & ML. Passionate about solving complex problems and driving innovation.</p>
+
+        <h2>Professional Experience</h2>
+        <p><strong>Learn Smart Services</strong> - Business Head (Feb '22 - June '24)</p>
+        <ul>
+            <li>Developed an educational consultancy platform.</li>
+            <li>Coordinated marketing campaigns and product development.</li>
+        </ul>
+        <p><strong>Freelance Stock Trader</strong> (Dec '21 - Present)</p>
+        <ul>
+            <li>Specialized in technical analysis and options trading.</li>
+        </ul>
+        <!-- Add more experiences as needed -->
+
+        <h2>Education</h2>
+        <p><strong>IIIT-Bangalore</strong> - Executive PG Program in Data Science</p>
+        <p><strong>Kirloskar Institute of Management</strong> - Post Graduate Diploma in Management</p>
+
+        <h2>Skills & Projects</h2>
+        <ul>
+            <li>Team Leadership</li>
+            <li>Product Management</li>
+            <li>AI & ML Development</li>
+            <li>Strategic Planning</li>
+            <!-- Add more skills or project highlights -->
+        </ul>
     </div>
 </body>
 </html>
