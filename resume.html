@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -55,37 +54,12 @@ h1, h2 {
     text-align: center;
 }
 
-.intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.intro img {
+.cv-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    max-width: 200px;
-    margin-right: 20px;
-}
-
-.intro .text-container {
-    max-width: 60%;
-}
-
-.typewriter-text {
-    font-style: italic;
-    font-weight: bold;
-    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -94,7 +68,6 @@ footer {
     padding: 20px;
     text-align: center;
     color: #ffffff;
-    margin-top: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -148,17 +121,62 @@ button:hover {
 <nav>
 <a href="index.html">Home</a>
 <a href="professional-experience.html">Professional Journey</a>
-<a href="projects.html">Projects &amp; Accolades</a>
+<a href="projects.html">Projects & Accolades</a>
 <a href="resume.html">Resume</a>
 </nav>
+
 <div class="content">
-<div class="intro">
-<div class="text-container">
-<h1>Resume</h1>
-<p>For a detailed view of my professional journey and qualifications, please <a href="Yogesh Pati CV.pdf" target="Yogesh Pati CV.pdf">download my resume here</a>.</p>
+    <div class="intro">
+        <div class="text-container">
+            <h1>Resume</h1>
+        </div>
+    </div>
+    
+    <!-- CV Content Section -->
+    <div class="cv-section">
+        <h2>Yogesh Kumar Pati</h2>
+        <p><strong>Address:</strong> [Your Address]</p>
+        <p><strong>Email:</strong> yogeshpatijobs@gmail.com</p>
+        <p><strong>Phone:</strong> +918501914606</p>
+
+        <h3>Objective</h3>
+        <p>[Your professional objective statement]</p>
+
+        <h3>Education</h3>
+        <p><strong>IIIT-Bangalore</strong> - Executive PG Program in Data Science</p>
+        <p><strong>Kirloskar Institute of Management</strong> - Post Graduate Diploma in Management</p>
+
+        <h3>Professional Experience</h3>
+        <p><strong>Learn Smart Services</strong> - Business Head (Feb '22 - June '24)</p>
+        <ul>
+            <li>Developed an educational consultancy platform...</li>
+            <li>Utilized various tools for data analysis...</li>
+        </ul>
+        <p><strong>Freelance Stock Trader</strong> (Dec '21 - Present)</p>
+        <ul>
+            <li>Technical indicator analysis...</li>
+        </ul>
+        <!-- Add more experiences as needed -->
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Team Leadership</li>
+            <li>Product Management</li>
+            <!-- Add more skills -->
+        </ul>
+
+        <h3>Interests</h3>
+        <p>Stock market, gymming, swimming, cricket, and chess. Exploring Virtual Reality games.</p>
+    </div>
+
+    <!-- Download CV Button -->
+    <div class="text-center">
+        <a href="Yogesh_Pati_CV.pdf" download="Yogesh_Pati_CV.pdf">
+            <button>Download My Resume</button>
+        </a>
+    </div>
 </div>
-</div>
-</div>
+
 <footer>
 <div class="footer-content">
 <div class="footer-left">
@@ -171,11 +189,10 @@ button:hover {
 <a href="mailto:yogeshpatijobs@gmail.com">
 <img alt="Email" src="images.png" style="width: 30px; height: auto;"/>
 </a>
-</a>
-<a href="https://www.linkedin.com/in/yogesh-kumar-pati-seniormanagement/" target="https://www.linkedin.com/in/yogesh-kumar-pati-seniormanagement">
+<a href="https://www.linkedin.com/in/yogesh-kumar-pati-seniormanagement/" target="_blank">
 <img alt="LinkedIn" src="circle-linkedin-512.webp" style="width: 30px; height: auto;"/>
 </a>
-<a href="https://github.com/PatiYogesh" target="https://github.com/PatiYogesh">
+<a href="https://github.com/PatiYogesh" target="_blank">
 <img alt="GitHub" src="iconmonstr-github-1.png" style="width: 30px; height: auto;"/>
 </a>
 <p>+918501914606</p>
