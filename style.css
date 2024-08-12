@@ -70,14 +70,14 @@ footer img {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures full viewport height */
+    min-height: 300vh; /* Ensures full viewport height */
 }
 
 /* Content area to take up available space */
 .content {
     flex: 1;
     overflow-y: auto; /* Adds vertical scrollbar if content exceeds page height */
-    padding-bottom: 150px; /* Increase padding to push footer down */
+    padding-bottom: 350px; /* Increase padding to push footer down */
 }
 
 /* Footer Styling */
@@ -95,6 +95,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Ensures full viewport height */
+    min-height: 300vh; /* Ensures full viewport height */
     box-sizing: border-box;
 }
