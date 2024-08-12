@@ -67,11 +67,45 @@ footer img {
 }
 
 /* Additional Space Below Content to Accommodate Footer */
+/* Wrapper for the entire content */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Content area to take up available space */
 .content {
+    flex: 1;
+    overflow-y: auto; /* Adds vertical scrollbar if content exceeds page height */
     padding: 20px;
     max-width: 900px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    padding-bottom: 450px; /* Increased padding to accommodate footer */
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 10px 20px;
+    color: #ffffff;
+    text-align: center;
+    border-top: 2px solid #444444;
+    width: 100%;
+    position: relative; /* Use relative positioning */
+    bottom: 0;
+    left: 0;
+}
+
+/* Ensure the scrollbar is visible on all devices */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensures full viewport height */
+    box-sizing: border-box;
 }
