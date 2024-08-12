@@ -70,7 +70,7 @@ footer img {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 300vh; /* Ensures full viewport height */
+    min-height: 100vh; /* Ensures full viewport height */
 }
 
 /* Content area to take up available space */
@@ -95,6 +95,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    min-height: 300vh; /* Ensures full viewport height */
+    min-height: 100vh; /* Ensures full viewport height */
     box-sizing: border-box;
 }
