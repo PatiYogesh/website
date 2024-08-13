@@ -42,11 +42,14 @@
 
         /* Content Sections */
         .content {
+            flex: 1;
             padding: 20px;
             max-width: 900px;
             margin: auto;
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
+            padding-bottom: 10px; /* Reduced padding to bring footer closer */
+            overflow-y: auto; /* Adds vertical scrollbar if content exceeds page height */
         }
 
         /* Download Button */
@@ -116,34 +119,74 @@
             50% { border-color: orange; }
         }
 
-        /* Footer */
-        footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            text-align: center;
-            color: #ffffff;
-            margin-top: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-        }
+        /* Footer Styling */
+    footer {
+        background-color: rgba(0, 0, 0, 0.95); /* Darker background */
+        padding: 10px 20px; /* Reduced padding for smaller height */
+        color: #ffffff; /* White text color */
+        text-align: center;
+        border-top: 2px solid #444444; /* Top border */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+        position: relative; /* Changed from fixed to relative */
+        bottom: 0; /* Ensure footer is at the bottom of content */
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
 
-        footer a {
-            color: #f39c12;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+        /* Footer Content Styling */
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+    }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        flex: 1;
+        margin: 5px 0; /* Margin for spacing between sections */
+    }
 
-        footer img {
-            width: 30px;
-            height: auto;
-            margin: 0 5px;
-        }
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-center {
+        text-align: center;
+    }
+
+    .footer-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Align content to the right end */
+    }
+
+    footer a {
+        color: #f39c12; /* Accent color for links */
+        text-decoration: none;
+        margin: 0 5px; /* Margin for links */
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer img {
+        width: 20px; /* Reduced icon size */
+        height: auto;
+        margin: 0 5px; /* Space around icons */
+    }
+
+    .footer-right .contact-info {
+        font-size: 14px;
+        margin-left: 10px; /* Space between icons and contact info */
+        white-space: nowrap; /* Prevent wrapping */
+    }
 
         /* General */
         .container {
