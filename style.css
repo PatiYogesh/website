@@ -90,8 +90,8 @@ footer {
     padding: 20px;
     text-align: center;
     color: #ffffff;
-    margin-top: 20px; /* Adds more space above the footer */
-    margin-bottom: 50px; /* Adds space below the footer */
+    margin-top: 100px; /* Adds more space above the footer */
+    margin-bottom: 00px; /* Adds space below the footer */
     width: 100%;
     position: relative;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
