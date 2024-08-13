@@ -1,99 +1,57 @@
-/* Wrapper to ensure full height layout */
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures full viewport height */
-}
+<body>
+    <div class="wrapper">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="professional-experience.html">Professional Journey</a>
+            <a href="projects.html">Projects & Accolades</a>
+            <a href="resume.html">Resume</a>
+        </nav>
 
-/* Content area with increased padding at the bottom */
-.content {
-    flex: 1;
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding-bottom: 150px; /* Ensures enough space for the footer */
-}
+        <div class="content">
+            <div class="intro">
+                <div class="image-container">
+                    <img alt="Yogesh Pati" src="IMG_1964.jpg"/>
+                </div>
+                <div class="text-container">
+                    <h1 id="greeting">Hi, Good Afternoon!</h1>
+                    <h2>I am Yogesh Kumar Pati</h2>
+                    <div class="typewriter-text" id="animated-text">Product Manager</div>
+                </div>
+            </div>
 
-/* Footer Styling */
-footer {
-    background-color: rgba(0, 0, 0, 0.95); /* Darker background */
-    padding: 10px 20px; /* Reduced padding for smaller height */
-    color: #ffffff;
-    text-align: center;
-    border-top: 2px solid #444444; /* Top border */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto; /* Push footer to the bottom */
-    width: 100%;
-    position: relative; /* Keeps footer at the bottom of the content */
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
+            <!-- Description Boxes -->
+            <div class="description-box">
+                <p>I’m a tech and management professional with degrees in Data Science from IIIT-Bangalore and Management from Kirloskar Institute. I'm passionate about solving problems and thrive on tackling new challenges.</p>
+            </div>
+            <div class="description-box">
+                <p>Outside of work, I enjoy the stock market and a variety of sports, including gymming, swimming, cricket, and chess. I'm also exploring the exciting world of Virtual Reality games.</p>
+            </div>
+            <div class="description-box">
+                <p>I'm eager to deepen my expertise in Product Management, AI & ML, and always pushing boundaries and driving innovation.</p>
+            </div>
+        </div>
 
-/* Footer Content Styling */
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.footer-left,
-.footer-center,
-.footer-right {
-    flex: 1;
-    margin: 5px 0;
-}
-
-.footer-left {
-    text-align: left;
-}
-
-.footer-center {
-    text-align: center;
-}
-
-.footer-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-footer a {
-    color: #f39c12;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer img {
-    width: 20px;
-    height: auto;
-    margin: 0 5px;
-}
-
-.footer-right .contact-info {
-    font-size: 14px;
-    margin-left: 10px;
-    white-space: nowrap;
-}
-
-/* Ensure full height for the page */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>Developed by Yogesh Kumar Pati</p>
+                </div>
+                <div class="footer-center">
+                    <p>© 2024 <img alt="Logo" src="png-transparent-computer-icons-path-miscellaneous-text-heart-thumbnail.png" style="width: 20px; height: auto;"/> All Rights Reserved</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:yogeshpatijobs@gmail.com">
+                        <img alt="Email" src="images.png" style="width: 30px; height: auto;"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yogesh-kumar-pati-seniormanagement/" target="_blank">
+                        <img alt="LinkedIn" src="circle-linkedin-512.webp" style="width: 30px; height: auto;"/>
+                    </a>
+                    <a href="https://github.com/PatiYogesh" target="_blank">
+                        <img alt="GitHub" src="iconmonstr-github-1.png" style="width: 30px; height: auto;"/>
+                    </a>
+                    <p>+918501914606</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
