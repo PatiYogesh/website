@@ -1,3 +1,21 @@
+/* Wrapper for full page height */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+}
+
+/* Content area to take up available space */
+.content {
+    flex: 1;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding-bottom: 100px; /* Ensure space between content and footer */
+}
+
 /* Footer Styling */
 footer {
     background-color: rgba(0, 0, 0, 0.95); /* Less transparent, dark background */
@@ -8,10 +26,10 @@ footer {
     display: flex;
     justify-content: space-between; /* Align items evenly */
     align-items: center;
-    margin-top: 30px;
+    margin-top: auto; /* Push footer to the bottom of the content */
     width: 100%;
-    position: relative; /* Changed from fixed to relative */
-    bottom: 0; /* Ensure footer is at the bottom of content */
+    position: relative; /* Relative positioning for dynamic placement */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for footer */
 }
 
 /* Footer Content Styling */
@@ -55,7 +73,7 @@ footer a:hover {
 }
 
 footer img {
-    width: 30px; /* Icon size */
+    width: 20px; /* Icon size adjusted */
     height: auto;
     margin: 0 5px; /* Space around icons */
 }
@@ -64,37 +82,6 @@ footer img {
     font-size: 14px;
     margin-left: 10px; /* Space between icons and contact info */
     white-space: nowrap; /* Prevent wrapping */
-}
-
-/* Additional Space Below Content to Accommodate Footer */
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures full viewport height */
-}
-
-/* Content area to take up available space */
-/* Content Sections */
-.content {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding-bottom: 200px; /* Increase this padding to push footer further down */
-}
-
-/* Footer */
-footer {
-    background-color: rgba(0, 0, 0, 0.95);
-    padding: 20px;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 0px; /* Adds more space above the footer */
-    margin-bottom: 0px; /* Adds space below the footer */
-    width: 100%;
-    position: relative;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Ensure the scrollbar is visible on all devices */
