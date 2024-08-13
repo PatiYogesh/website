@@ -42,11 +42,14 @@ nav a:hover {
 
 /* Content Sections */
 .content {
+    flex: 1;
     padding: 20px;
     max-width: 900px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    padding-bottom: 50px; /* Reduced padding to bring footer closer */
+    overflow-y: auto; /* Adds vertical scrollbar if content exceeds page height */
 }
 
 h1, h2 {
